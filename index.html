@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- 	https://www.w3schools.com/bootstrap4 -->
+
+ 	<title>Sample</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<header>
+
+<!-------------- navigation -->
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+  <a id="firma" class="navbar-brand" href="index.html"><h1>Firma <span id="sp">sp. z o.o.</span></h1></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button id="navbarToggle" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span id="togIcon" class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav mr-auto">
+      <div><hr class="menuHr"></div>
+      <li class="nav-item">
+        <a class="nav-link nav-index" href="page1.html">Produkty</a>
+      </li>
+      <div><hr class="menuHr"></div>
+      <li class="nav-item">
+        <a class="nav-link nav-index" href="page2.html">Misja</a>
+      </li>
+      <div><hr class="menuHr"></div>
+      <li class="nav-item">
+        <a class="nav-link nav-index" href="page3.html">Zaproszenie</a>
+      </li>
+<!--       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li> -->
+    </ul>
+      <form class="form-inline" action="/action_page.php">
+        <input id="input" class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button id="search" class="btn btn-info" type="submit">Szukaj</button>
+      </form>    
+  </div>
+</nav>
+
+	</header>
+
+	<div class="jumbotron text-center">
+	  	<h1 class="main">Dobry tytuł</h1>
+  		<p id="jumbo">Proszę zmienić wielkość okna przeglądarki, by zobaczyć efekt responsywności!</p> 
+	</div>
+
+<!-- ------------Columns ------------->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3 class="display-4"><a href="page1.html">Czym</a> <small>się chwalimy</small></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4">
+      <h3 class="display-4"><a href="page2.html">Czym</a> <small>zaskakujemy</small></h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-sm-4 bg-light">
+      <h3 class="display-4"><a href="page3.html">Z kim</a> <small>pracujemy</small></h3>        
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+
+<div><hr class="short"></div>
+
+
+<!-- ----------wide paragraph ------------------>
+<div class="container-fluid">
+  <div class="row">
+    <div id="big" class="col-sm-12 text-justify">
+      <h3 class="display-4">One column</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris....</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.....</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ----------wide paragraph indented ------------------>
+<div id="longText" class="container">
+  <h2 class="display-2">Container</h2>
+  <p class="lead">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris....</p> 
+  <p><abbr title="United States of Amrica">USA</abbr> enim ad minim veniam, quis nostrud exercitation <mark>ullamco laboris</mark>...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris....</p>
+    <h4>Blockquotes</h4>
+  <blockquote class="blockquote">
+    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+    <footer class="blockquote-footer">From WWF's website</footer>
+  </blockquote>
+</div>
+
+<div class="insertFooter">control</div>
+
+
+
+<script type="text/javascript" src="js/ajax-utils.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

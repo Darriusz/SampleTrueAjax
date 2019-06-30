@@ -1,0 +1,373 @@
+/*nav.navbar {
+	position: relative;
+}
+*/
+.navbar {
+	background-color: #295488;
+	border-radius: 5px;
+/*	height: 60px*/
+/*	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9yCxn_U9NqK8i-7OD5UG3dwbjVUdxdy-ZlY5vOe1W1vBiFIjV");
+*/}
+
+/*#firma {
+	color: white;
+}*/
+
+#sp {
+	font-size: 0.4em;
+}
+
+a.nav-link {
+	font-size: 125%;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: #FA857F;
+	text-align: center;
+}
+
+/*#input{
+	float: right;
+}
+*/
+#search {
+/*	float: right;*/
+	background-color: #FA857F;
+	border-radius: 5px;
+	border: none;
+/*	margin-left: 25px;*/
+}
+
+
+hr.menuHr{
+	border: 0; 
+	border-top: 1px solid white;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+	color: #BEDBF8;
+	background-color: rgba(255,255,255,0.2);
+	border-radius: 5px;
+}
+
+.display-4 {
+	font-size: 300%
+	;
+}
+
+h3 > a {
+	text-decoration: none;
+	color: black;
+} 
+
+h3 > a:hover {
+	text-decoration: none;
+	color: white;
+	background-color: #E5E0E0;
+	border-radius: 15px;
+} 
+
+
+small{
+	color: #FA857F;
+	font-size:50%;
+}
+
+.container-fluid{
+	width:95%;
+	margin: auto;
+}
+
+.jumbotron {
+
+/*	background-image: url("http://webershandwick.co.uk/wp-content/uploads/2013/11/Corporate-2.jpg");
+*/
+	background-image: url("https://www.referenceforbusiness.com/photos/corporate-image-630.jpg");
+	color: white;
+	margin-top: 60px; /*for fixed navbar BUT doesn't move down with coll navbar. Moves down when no margin top and no fixed navbar */
+	max-height: 280px;
+
+}
+
+h1.main {
+	font-size: 7vw;
+}
+
+#jumbo {
+	color: #FA857F;
+	font-size: 3vw;	
+	margin-bottom: 0;
+}
+
+.display-2 {
+	color: #FA857F;
+
+}
+
+.display-4{
+	font-size: 6.5vw;
+}
+
+hr.short{
+	width:60%;
+	border: 0; 
+	border-top: 1px solid #FA857F;
+	margin-top: 50px;
+}
+
+#big {
+	margin-top: 20px;
+}
+
+#bigPage1 {
+	margin-top: 100px;
+}
+
+#bigPage3 {
+	margin-top: 60px;
+}
+	
+#longText{
+	width: 85%;
+	margin: auto;
+	text-align: justify;
+	background-color: #E5E0E0;
+}
+
+#bodyPage1, #bodyPage2{
+	background-color: #A9B0B1;
+}
+
+#startParaPage1 {
+	margin-top: 35px;
+}
+
+#carous {
+ 	width: 100%;
+    height: 100%;
+    max-height: 400px;
+    max-width: 600px;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 2px 2px #295488;
+}
+
+#slajdy {
+	margin-top: 50px;
+	width: 70%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    max-width: 600px;
+}
+
+#tytMisja{
+	font-size:280%;
+	text-align: center;
+	color: #295488;
+	margin-top: 40px;
+	margin-bottom:50px;
+}
+
+#collapsiblePanels {
+	background-color:#E5E0E0;
+	padding-top:10px;
+	border-radius:5px;
+	text-align: justify;
+}
+
+.colPanel {
+	text-decoration: none;
+	color: #FA857F;
+}
+
+h4 > a.display-4 {
+	font-size: 150%;
+}
+
+h4 > a:hover {
+	text-decoration: none;
+	color: white;
+} 
+
+.panel-title{
+	text-align: center;
+}
+
+#button3PanelHeading{
+	color: red;
+	margin-top: 30px;
+	margin-bottom:30px;
+}
+
+.colImg {
+	width:100%;
+	max-width: 400px;
+	max-height: 250px;
+	margin-top: 20px;
+	border: 1px solid black;
+	box-shadow: 2px 2px #A8B7C6;
+}
+
+#mainFooter{
+	background-color: #0E284D;
+	color: #BAD5FC;
+	text-align: center;	
+	margin-top: 30px;
+	padding: 20px;
+}
+
+a.tel {
+	color: #BAD5FC;
+}
+
+#copyright{
+	text-align: center;
+	color: #8B9DB5;
+	font-size:0.8em;
+}
+
+
+/*******extra extra small**********/
+@media (max-width: 450px) {
+
+/*	#input{
+		margin-left: 0;
+	}*/
+
+	h1.main {
+		font-size: 30px;
+	}
+
+	#jumbo {
+		color: #FA857F;
+		font-size: 12px;
+	}
+	
+	body {
+		font-size: 0.8em;
+	}
+
+	#sp {
+	color: #FA857F;
+}
+
+	.jumbotron{
+		height:180px;
+	}
+
+	.display-2 {
+		font-size:380%;
+	}
+
+	.display-4{
+		font-size: 250%;
+	}
+	
+	#button1, #button2, #button3 {
+		font-size:110%;
+		width: 60%;
+	}
+}
+
+
+/*******extra small**********/
+@media (min-width: 451px) and (max-width: 576px) {
+	
+	.navbar-dark .navbar-nav .nav-link{
+		color: #FA857F;
+		text-align: center;
+	}
+
+	a.firma{
+		margin-top: 2px;
+	}
+
+	body {
+		font-size: 0.8em;
+	}
+
+	#sp {
+	color: #FA857F;
+}
+
+	.jumbotron{
+		height:220px;
+	}
+
+	h1.main{
+		margin-top: 30px;
+	}
+
+	.display-2 {
+		font-size:380%;
+	}
+
+	.display-4{
+		font-size: 250%;
+	}
+	
+}
+
+
+/*******medium and small**********/
+@media (min-width: 577px) and (max-width: 991px) {
+
+	.navbar-dark .navbar-nav .nav-index{  
+		width:120px;
+		margin-right: 8px;
+		border: 1px solid white;
+		border-radius: 5px;
+		font-size: 1.2em;
+		padding:3px;
+	}
+
+	.navbar-dark .navbar-nav .nav-page3{ 
+		width:120px;
+		margin-right: 8px;
+		border-radius: 5px;
+		background-color: rgba(255,255,255,0.8);
+		font-size: 1.2em;
+		padding:3px;
+	}
+}
+
+
+/*******large**********/
+@media (min-width: 992px) {
+
+.navbar-dark .navbar-nav .nav-index{  
+	width:120px;
+	margin-right: 8px;
+	border: 1px solid white;
+	border-radius: 5px;
+	font-size: 1.2em;
+	padding:3px;
+}
+
+.navbar-dark .navbar-nav .nav-page3{ 
+	width:120px;
+	margin-right: 8px;
+	border-radius: 5px;
+	background-color: rgba(255,255,255,0.8);
+	font-size: 1.2em;
+	padding:3px;
+}
+
+	h1.main {
+		font-size: 60px;
+	}
+
+	#jumbo {
+		color: #FA857F;
+		font-size: 25px;
+	}
+		
+	.display-4{
+		font-size: 58px;
+}
