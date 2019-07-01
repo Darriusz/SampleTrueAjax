@@ -114,7 +114,17 @@ function hideShow(item) {
 		
             },
 		true);	
-		hideShow("button1Content");	
+
+	  var x = document.getElementById("button1Content");
+	  var y = document.getElementById("button1");	  
+		if (x.style.display === "block") {
+			x.style.display = "none";
+            y.innerHTML = 'JSON data';			
+		} else {
+			x.style.display = "block";
+            y.innerHTML = 'Close';
+		}
+//		hideShow("button1Content"); /tu zamiast samej funkcji hideShow wstawiona także zmiana napisu na przycisku
 		
        $ajaxUtils
           .sendGetRequest("data/nameHeading.txt", 
@@ -141,7 +151,17 @@ function hideShow(item) {
                 .innerHTML = txt + '<hr>';
             },
 		false);
-		hideShow("button2Content");
+		
+	  var x = document.getElementById("button2Content");
+	  var y = document.getElementById("button2");	  
+		if (x.style.display === "block") {
+			x.style.display = "none";
+            y.innerHTML =  'TXT file';			
+		} else {
+			x.style.display = "block";
+            y.innerHTML = 'Close';
+		}			
+//		hideShow("button2Content"); /tu zamiast samej funkcji hideShow wstawiona także zmiana napisu na przycisku
 		
         $ajaxUtils
           .sendGetRequest("data/TekstHeading.txt", 
@@ -167,7 +187,17 @@ console.log(heading);
 		
         document.querySelector("#button3PanelHeading")
                 .innerHTML = '<h5>Please, feel free to run the provided recording</h5>';
-		hideShow("button3PanelHeading");
+
+	  var x = document.getElementById("button3PanelHeading");
+	  var y = document.getElementById("button3");	  
+		if (x.style.display === "block") {
+			x.style.display = "none";
+            y.innerHTML = 'audio file';			
+		} else {
+			x.style.display = "block";
+            y.innerHTML = 'Close';
+		}
+//		hideShow("button3PanelHeading");
 	});
 
 
