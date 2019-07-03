@@ -47,25 +47,51 @@ var insertHtml = function(selector, html){
 
 //******Collapsible Panel 1 Page 3 *********
 
-        $ajaxUtils
-          .sendGetRequest("data/name.json", 
-            function (res) {
-              var message = 
-                "Our client named " + res.firstName + " " + res.lastName
-              if (res.likesXY) {
-                message += " likes XY";
-              }
-              else {
-                message += " doesn't like XY";
-              }
-              message += " and has made ";
-              message += res.numberOfPurchases + 0;
-              message += " purchases.";
+  //       $ajaxUtils
+  //         .sendGetRequest("data/name.json", 
+  //           function (res) {
+  //             var message = 
+  //               "Our client named " + res.firstName + " " + res.lastName;
+  //             if (res.likesXY) {
+  //               message += " likes XY";
+  //             }
+  //             else {
+  //               message += " doesn't like XY";
+  //             }
+  //             message += " and has made ";
+  //             message += res.numberOfPurchases + 0;
+  //             message += " purchases.";
 
-              document.querySelector("#collapsiblePanel1Text")
-                .innerHTML = message; 
-	            },
-		true);	
+  //             document.querySelector("#collapsiblePanel1Text")
+  //               .innerHTML = message; 
+	 //            },
+		// true);	
+
+
+//******Collapsible Panel 1a Page 3 *********
+
+        $ajaxUtils
+          .sendGetRequest("data/stats.json", 
+            function(res){
+              var finalMessage = "<ul>";
+              for (var i = 0; i < res.length; i++){ 
+                var message = 
+                   "<li>Our <em>" + res[i].gender + "</em> clients from <strong>" + res[i].country +"</strong>";
+                if (res[i].likesXY) {
+                    message += " like xxx";
+                }
+                else {
+                    message += " don't like xxx";
+                }
+                message += " and have made <u>";
+                message += res[i].numberOfPurchases + 0;
+                message += "</u> purchases.</li>";
+                finalMessage += message; 
+              }  
+            document.querySelector("#collapsiblePanel1Text")
+               .innerHTML = finalMessage + "</ul>";
+            }, 
+            true);
 
 
 //******Collapsible Panel 2 Page 3 *********
@@ -93,27 +119,29 @@ function hideShow(item) {
 //***********button1  *************
     document.querySelector("#button1")
       .addEventListener("click", function () {
-        
-        $ajaxUtils
-          .sendGetRequest("data/name.json", 
-            function (res) {
-              var message = 
-                "Our client named " + res.firstName + " " + res.lastName
-              if (res.likesXY) {
-                message += " likes XY";
-              }
-              else {
-                message += " doesn't like XY";
-              }
-              message += " and has made ";
-              message += res.numberOfPurchases + 0;
-              message += " purchases.";
 
-              document.querySelector("#button1Content")
-                .innerHTML = message + '<hr>'; 
-		
-            },
-		true);	
+          $ajaxUtils
+          .sendGetRequest("data/stats.json", 
+            function(res){
+              var finalMessage = "";
+              for (var i = 0; i < res.length; i++){ 
+                var message = 
+                   "Our <em>" + res[i].gender + "</em> clients from <strong>" + res[i].country +"</strong>";
+                if (res[i].likesXY) {
+                    message += " like xxx";
+                }
+                else {
+                    message += " don't like xxx";
+                }
+                message += " and have made <u>";
+                message += res[i].numberOfPurchases + 0;
+                message += "</u> purchases.";
+                finalMessage += message + "<br>"; 
+              }  
+            document.querySelector("#button1Content")
+               .innerHTML = finalMessage;
+            }, 
+            true);      
 
 	  var x = document.getElementById("button1Content");
 	  var y = document.getElementById("button1");	  
@@ -127,7 +155,7 @@ function hideShow(item) {
 //		hideShow("button1Content"); /tu zamiast samej funkcji hideShow wstawiona także zmiana napisu na przycisku
 		
        $ajaxUtils
-          .sendGetRequest("data/nameHeading.txt", 
+          .sendGetRequest("data/statsHeading.txt", 
             function (request) {
               var heading = request.responseText;
               document.querySelector("#button1PanelHeading")

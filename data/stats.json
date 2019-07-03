@@ -1,0 +1,24 @@
+[{
+  "gender": "male",
+  "country": "Peru",
+  "likesXY": true,
+  "numberOfPurchases": 4000 
+},
+{
+  "gender": "female",
+  "country": "Peru",
+  "likesXY": false,
+  "numberOfPurchases": 1503 
+},
+{
+  "gender": "male",
+  "country": "Brasil",
+  "likesXY": false,
+  "numberOfPurchases": 8010 
+},
+{
+  "gender": "female",
+  "country": "Brasil",
+  "likesXY": false,
+  "numberOfPurchases": 2820 
+}]

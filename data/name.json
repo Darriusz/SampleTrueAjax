@@ -1,6 +1,6 @@
 {
   "firstName": "FirstName",
   "lastName": "LastName",
-  "likes XY": true,
-  "numberOfPurchases": 2 
+  "likesXY": true,
+  "numberOfPurchases": 3 
 }
